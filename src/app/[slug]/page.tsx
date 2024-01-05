@@ -52,8 +52,8 @@ export default async function Page({ params }: Props) {
     <main>
         <Script src="/qcscript.js" />
   <div className="min-h-screen mx-auto max-w-2xl p-4">
- <div id="M933316ScriptRootC1570363"></div>
-<script src="https://jsc.mgid.com/b/i/bizcongnghe.com.1570363.js" async></script>
+ <div id="M933316ScriptRootC1570362"></div>
+<script src="https://jsc.mgid.com/b/i/bizcongnghe.com.1570362.js" async></script>
 
     <h1 className="mx-auto text-3xl md:text-6xl lg:text-6xl font-bold tracking-tighter leading-normal mb-4">
       {article.name}
