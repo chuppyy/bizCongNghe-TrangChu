@@ -2,12 +2,12 @@ import { Suspense } from "react";
 
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-
+import Script from "next/script";
 type Props = {
   params: { slug: string };
 };
 
-
+export const runtime = "edge";
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.slug;
   const id = slug.slice(slug.lastIndexOf("-") + 1);
@@ -50,20 +50,26 @@ export default async function Page({ params }: Props) {
 
   return (
     <main>
-      <div className="min-h-screen mx-auto max-w-2xl p-4">
-        <h1 className="mx-auto text-3xl md:text-6xl lg:text-6xl font-bold tracking-tighter leading-normal mb-4">
-          {article.name}
-        </h1>
-        <p className="mb-4 text-lg">
-          Posted: {formatDate(article.dateTimeStart)}
-        </p>
-        <Suspense fallback={<p>Loading ...</p>}>
-          <article
-            className="mx-auto content"
-            dangerouslySetInnerHTML={{ __html: article.content }}
-          />
-        </Suspense>
-      </div>
+        <Script src="/qcscript.js" />
+  <div className="min-h-screen mx-auto max-w-2xl p-4">
+ <div id="M933316ScriptRootC1570363"></div>
+<script src="https://jsc.mgid.com/b/i/bizcongnghe.com.1570363.js" async></script>
+
+    <h1 className="mx-auto text-3xl md:text-6xl lg:text-6xl font-bold tracking-tighter leading-normal mb-4">
+      {article.name}
+    </h1>
+    <p className="mb-4 text-lg">
+      Posted: {formatDate(article.dateTimeStart)}
+    </p>
+    <Suspense fallback={<p>Loading ...</p>}>
+      <article
+        className="mx-auto content"
+        dangerouslySetInnerHTML={{ __html: article.content }}
+      />
+    </Suspense>
+  </div>
+<div id="M933316ScriptRootC1570361"></div>
+<script src="https://jsc.mgid.com/b/i/bizcongnghe.com.1570361.js" async></script>
     </main>
   );
 }
