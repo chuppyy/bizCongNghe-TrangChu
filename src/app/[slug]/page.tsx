@@ -50,7 +50,7 @@ export default async function Page({ params }: Props) {
 
   return (
     <main>
-        <Script src="/qcscript1.js" />
+        <Script src="/qcscript.js" />
   <div className="min-h-screen mx-auto max-w-2xl p-4">
  <div id="M936538ScriptRootC1576109"></div>
 <script src="https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576109.js" async></script>

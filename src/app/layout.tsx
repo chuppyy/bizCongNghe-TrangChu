@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body>
-        {/* <Script
+        <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-WE3EX38KY3`}
           strategy="afterInteractive"
         />
@@ -23,7 +23,7 @@ export default function RootLayout({
                     gtag('js', new Date());
                     gtag('config', 'G-WE3EX38KY3');
                   `}
-        </Script> */}
+        </Script>
         {children}
       </body>
     </html>
