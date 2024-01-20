@@ -52,8 +52,8 @@ export default async function Page({ params }: Props) {
     <main>
         <Script src="/qcscript1.js" />
   <div className="min-h-screen mx-auto max-w-2xl p-4">
- <div id="M933316ScriptRootC1570362"></div>
-<script src="https://jsc.mgid.com/b/i/bizco1ngnghe.com.1570362.js" async></script>
+ <div id="M936538ScriptRootC1576109"></div>
+<script src="https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576109.js" async></script>
 
     <h1 className="mx-auto text-3xl md:text-6xl lg:text-6xl font-bold tracking-tighter leading-normal mb-4">
       {article.name}
@@ -68,8 +68,8 @@ export default async function Page({ params }: Props) {
       />
     </Suspense>
   </div>
-<div id="M933316ScriptRootC1570361"></div>
-<script src="https://jsc.mgid.com/b/i/bizcong1nghe.com.1570361.js" async></script>
+<div id="M936538ScriptRootC1576108"></div>
+<script src="https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576108.js" async></script>
     </main>
   );
 }
