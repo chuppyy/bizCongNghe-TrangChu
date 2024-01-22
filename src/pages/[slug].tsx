@@ -20,9 +20,9 @@ export default function Page(data: any) {
       <main>
         <Script src="/qcscript.js" />
         <div className="container-flu details">
-                  <div id="M936535ScriptRootC1576084"></div>
+                  <div id="M936538ScriptRootC1576109"></div>
           <script
-                      src="https://jsc.adskeeper.com/c/e/celebrity.thongtinluat.com.1576084.js"
+                      src="https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576109.js"
             async
           ></script>
 
@@ -37,9 +37,9 @@ export default function Page(data: any) {
             />
           </Suspense>
         </div>
-              <div id="M936535ScriptRootC1576089"></div>
+              <div id="M936538ScriptRootC1576108"></div>
         <script
-                  src="https://jsc.adskeeper.com/c/e/celebrity.thongtinluat.com.1576089.js"
+                  src="https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576108.js"
           async
         ></script>
       </main>
