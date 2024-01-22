@@ -1,6 +1,6 @@
 // check width
 window.addEventListener("load", function () {
-    console.log("xxx", window.innerWidth)
+    console.log("xxxsss", window.innerWidth)
     if (window.innerWidth <= 500) {
 
         // Giua bai mgid
@@ -32,7 +32,7 @@ window.addEventListener("load", function () {
             ampTag.setAttribute("layout", "responsive");
             ampTag.setAttribute("type", "mgid");
             ampTag.setAttribute("data-publisher", "vbonews.com");
-            ampTag.setAttribute("data-widget", "1570363");
+            ampTag.setAttribute("data-widget", "1569695");
             ampTag.setAttribute("data-container", "M936538ScriptRootC1576110");
             ampTag.setAttribute("data-block-on-consent", "_till_responded");
             scriptContainer.appendChild(ampTag);
@@ -74,7 +74,7 @@ window.addEventListener("load", function () {
             ampTag.setAttribute("layout", "responsive");
             ampTag.setAttribute("type", "mgid");
             ampTag.setAttribute("data-publisher", "vbonews.com");
-            ampTag.setAttribute("data-widget", "1570363");
+            ampTag.setAttribute("data-widget", "1569695");
             ampTag.setAttribute("data-container", "M936538ScriptRootC1576110");
             ampTag.setAttribute("data-block-on-consent", "_till_responded");
             scriptContainer.appendChild(ampTag);
