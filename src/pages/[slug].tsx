@@ -16,6 +16,14 @@ export default function Page(data: any) {
         <title>{article.name}</title>
         <meta property="og:image" content={article.avatarLink} />
         <meta property="og:title" content={article.name} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-87TD51N1G8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-87TD51N1G8');
+</script>
       </Head>
       <main>
         <Script src="/qcscript.js" />
