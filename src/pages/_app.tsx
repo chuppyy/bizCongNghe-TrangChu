@@ -6,7 +6,7 @@ import '../globals.css'
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head children={undefined}>
+      <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
 
