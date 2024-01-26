@@ -26,10 +26,11 @@ export default function Page(data: any) {
           gtag('config', 'G-87TD51N1G8');
         `}
       </Script>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8079422152195086"
-     crossorigin="anonymous"></script>
+     
       <main>
         <Script src="/qcscript.js" />
+         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8079422152195086"
+     crossorigin="anonymous"></script>
         <div className="container-flu details">
           <div id="M936538ScriptRootC1576109"></div>
           <script
