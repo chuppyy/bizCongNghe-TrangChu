@@ -49,7 +49,7 @@ export default function Page(data: any) {
           data-ad-format="auto"
           data-full-width-responsive="true"
         ></ins>
-          <script>
+          <script data-nscript="afterInteractive">
      (adsbygoogle = window.adsbygoogle || []).push({});
             console.log(window.adsbygoogle)
 </script>
