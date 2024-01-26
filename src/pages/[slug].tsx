@@ -51,11 +51,7 @@ export default function Page(data: any) {
         ></script>
 
        <ins
-      className="adsbygoogle"
-      style={{
-        display: 'block',
-        overflow: 'hidden',
-      }}
+      className="adsbygoogle"     
      style="display:block"
      data-ad-client="ca-pub-8079422152195086"
      data-ad-slot="6695725073"
