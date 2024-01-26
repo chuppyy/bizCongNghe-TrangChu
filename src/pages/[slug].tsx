@@ -35,13 +35,26 @@ export default function Page(data: any) {
         <Script src="/qcscript.js" />
         
         <div className="container-flu details">
-          <div id="M936538ScriptRootC1576109"></div>
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8079422152195086"
+         crossorigin="anonymous"></script>
+    <!-- Client_Responsive_1 -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8079422152195086"
+         data-ad-slot="6695725073"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>       
+          
+
+          <h1>{article.name}</h1>
+      <div id="M936538ScriptRootC1576109"></div>
           <script
             src="https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576109.js"
             async
           ></script>
-
-          <h1>{article.name}</h1>
           <p className="mb-4 text-lg">
             Posted: {formatDate(article.dateTimeStart)}
           </p>
