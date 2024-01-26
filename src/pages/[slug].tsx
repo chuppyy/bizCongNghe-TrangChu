@@ -8,6 +8,36 @@ const formatDate = (str: string) => {
   return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
 };
 
+import { useEffect } from 'react';
+
+const AdBanner = (props) => {
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+
+  return (
+    <ins
+      className="adsbygoogle"
+      style={{
+        display: 'block',
+        overflow: 'hidden',
+      }}
+     
+     style="display:block"
+     data-ad-client="ca-pub-8079422152195086"
+     data-ad-slot="6695725073"
+     data-ad-format="auto"
+     data-full-width-responsive="true"
+      {...props}
+    />
+  );
+};
+export default AdBanner;
+
 export default function Page(data: any) {
   const article = data.data;
   return (
@@ -41,18 +71,7 @@ export default function Page(data: any) {
           crossOrigin="anonymous"
         ></script>
 
-        <ins
-          className="adsbygoogle"
-          style={{ display: 'block' }}
-          data-ad-client="ca-pub-8079422152195086"
-          data-ad-slot="6695725073"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins>
-          <script data-nscript="afterInteractive">
-     (adsbygoogle = window.adsbygoogle || []).push({});
-            console.log(window.adsbygoogle)
-</script>
+      <AdBanner></AdBanner>
 
           <h1>{article.name}</h1>
       <div id="M936538ScriptRootC1576109"></div>
