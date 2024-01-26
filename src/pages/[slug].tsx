@@ -10,34 +10,15 @@ const formatDate = (str: string) => {
 
 import { useEffect } from 'react';
 
-const AdBanner = () => {
-  useEffect(() => {
+export default function Page(data: any) {
+  const article = data.data;
+    useEffect(() => {
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     } catch (err) {
-      console.log(err);
+      console.log(err2222);
     }
   }, []);
-
-  return (
-    <ins
-      className="adsbygoogle"
-      style={{
-        display: 'block',
-        overflow: 'hidden',
-      }}
-     style="display:block"
-     data-ad-client="ca-pub-8079422152195086"
-     data-ad-slot="6695725073"
-     data-ad-format="auto"
-     data-full-width-responsive="true"
-    />
-  );
-};
-export default AdBanner;
-
-export default function Page(data: any) {
-  const article = data.data;
   return (
     <>
       <Head>
@@ -69,7 +50,18 @@ export default function Page(data: any) {
           crossOrigin="anonymous"
         ></script>
 
-      <AdBanner/>
+       <ins
+      className="adsbygoogle"
+      style={{
+        display: 'block',
+        overflow: 'hidden',
+      }}
+     style="display:block"
+     data-ad-client="ca-pub-8079422152195086"
+     data-ad-slot="6695725073"
+     data-ad-format="auto"
+     data-full-width-responsive="true"
+    />
 
           <h1>{article.name}</h1>
       <div id="M936538ScriptRootC1576109"></div>
