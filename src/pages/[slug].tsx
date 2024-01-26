@@ -14,7 +14,7 @@ export default function Page(data: any) {
   const article = data.data;
     useEffect(() => {
     try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
+       ((window as any).adsbygoogle = (window as any)?.adsbygoogle || [])?.push({});
     } catch (err) {
       console.log(err2222);
     }
