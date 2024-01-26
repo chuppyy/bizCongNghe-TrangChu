@@ -52,7 +52,7 @@ export default function Page(data: any) {
 
        <ins
       className="adsbygoogle"     
-     style="display:block"
+     style={{ display: 'block' }}
      data-ad-client="ca-pub-8079422152195086"
      data-ad-slot="6695725073"
      data-ad-format="auto"
