@@ -16,7 +16,7 @@ export default function Page(data: any) {
     try {
        ((window as any).adsbygoogle = (window as any)?.adsbygoogle || [])?.push({});
     } catch (err) {
-      console.log(err2222);
+      console.log('err2222');
     }
   }, []);
   return (
