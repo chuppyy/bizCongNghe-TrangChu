@@ -10,7 +10,7 @@ const formatDate = (str: string) => {
 
 import { useEffect } from 'react';
 
-const AdBanner = (props) => {
+const AdBanner = () => {
   useEffect(() => {
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -26,13 +26,11 @@ const AdBanner = (props) => {
         display: 'block',
         overflow: 'hidden',
       }}
-     
      style="display:block"
      data-ad-client="ca-pub-8079422152195086"
      data-ad-slot="6695725073"
      data-ad-format="auto"
      data-full-width-responsive="true"
-      {...props}
     />
   );
 };
@@ -71,7 +69,7 @@ export default function Page(data: any) {
           crossOrigin="anonymous"
         ></script>
 
-      <AdBanner></AdBanner>
+      <AdBanner/>
 
           <h1>{article.name}</h1>
       <div id="M936538ScriptRootC1576109"></div>
