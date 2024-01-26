@@ -49,7 +49,9 @@ export default function Page(data: any) {
           data-ad-format="auto"
           data-full-width-responsive="true"
         ></ins>
-          
+          <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
           <h1>{article.name}</h1>
       <div id="M936538ScriptRootC1576109"></div>
