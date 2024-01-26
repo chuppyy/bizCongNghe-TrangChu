@@ -35,18 +35,20 @@ export default function Page(data: any) {
         <Script src="/qcscript.js" />
         
         <div className="container-flu details">
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8079422152195086"
-         crossorigin="anonymous"></script>
-    <!-- Client_Responsive_1 -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-8079422152195086"
-         data-ad-slot="6695725073"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>       
+              <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8079422152195086"
+          crossOrigin="anonymous"
+        ></script>
+
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-8079422152195086"
+          data-ad-slot="6695725073"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
           
 
           <h1>{article.name}</h1>
