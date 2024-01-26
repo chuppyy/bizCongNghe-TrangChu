@@ -51,6 +51,7 @@ export default function Page(data: any) {
         ></ins>
           <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
+            console.log(window.adsbygoogle)
 </script>
 
           <h1>{article.name}</h1>
