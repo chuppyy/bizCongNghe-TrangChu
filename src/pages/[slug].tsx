@@ -35,24 +35,24 @@ export default function Page(data: any) {
           gtag('config', 'G-87TD51N1G8');
         `}
       </Script>
-{/*      <Script
+     <Script
   id="adsbygoogle-init"
   strategy="afterInteractive"
   crossOrigin="anonymous"
-  src= "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8079422152195086"/> */}
+  src= "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3619133031508264"/>
       <main>
         <Script src="/qcscript.js" />
         
         <div className="container-flu details">
-{/*               <script async  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8079422152195086"    crossOrigin="anonymous"   ></script> */}
-{/*        <ins
+              <script async  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3619133031508264"    crossOrigin="anonymous"   ></script>
+       <ins
       className="adsbygoogle"     
      style={{ display: 'block' }}
-     data-ad-client="ca-pub-8079422152195086"
-     data-ad-slot="6695725073"
+     data-ad-client="ca-pub-3619133031508264"
+     data-ad-slot="1236418798"
      data-ad-format="auto"
      data-full-width-responsive="true"
-    /> */}
+    />
  <div id="M936538ScriptRootC1576109"></div>
           <script   src="https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576109.js"   async  ></script>
           <h1>{article.name}</h1>     
