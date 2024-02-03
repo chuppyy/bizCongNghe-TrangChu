@@ -53,9 +53,11 @@ export default function Page(data: any) {
      data-ad-format="auto"
      data-full-width-responsive="true"
     />
- <div id="M936538ScriptRootC1576109"></div>
+
+          <h1>{article.name}</h1>    
+
+           <div id="M936538ScriptRootC1576109"></div>
           <script   src="https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576109.js"   async  ></script>
-          <h1>{article.name}</h1>     
           <p className="mb-4 text-lg">
             Posted: {formatDate(article.dateTimeStart)}
           </p>
