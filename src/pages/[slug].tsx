@@ -12,11 +12,136 @@ import { useEffect } from 'react';
 
 export default function Page(data: any) {
   const article = data.data;
-    useEffect(() => {
+   useEffect(() => {
     try {
-       ((window as any).adsbygoogle = (window as any)?.adsbygoogle || [])?.push({});
+      var qcImgDiv = document.getElementById("qcImg");
+
+      if (qcImgDiv) {
+        var insElement = document.createElement("ins");
+        insElement.className = "adsbygoogle";
+        insElement.style.display = "block";
+        insElement.setAttribute("data-ad-client", "ca-pub-3619133031508264");
+        insElement.setAttribute("data-ad-slot", "9137554578");
+        insElement.setAttribute("data-ad-format", "auto");
+        insElement.setAttribute("data-full-width-responsive", "true");
+
+        // Chèn đối tượng ins vào thẻ div
+        qcImgDiv.appendChild(insElement);
+      }
+       var qcDivqc3 = document.getElementById("qcmgidgb3");
+        if(qcDivqc3){
+            // Tạo một thẻ div mới để chứa script và amp-embed
+            var scriptContainer = document.createElement("div");
+
+            // Tạo thẻ div cho script
+            var scriptDiv = document.createElement("div");
+            scriptDiv.id = "M936535ScriptRootC1583648";
+            scriptContainer.appendChild(scriptDiv);
+
+            // Tạo thẻ script
+            var scriptTag = document.createElement("script");
+            scriptTag.src = "https://jsc.adskeeper.com/c/e/celebrity.thongtinluat.com.1583648.js";
+            scriptTag.async = true;
+            //  scriptContainer.appendChild(scriptTag);
+
+            // Chèn scriptContainer vào thẻ div "qc"
+            qcDivqc3.appendChild(scriptContainer);
+            qcDivqc3.appendChild(scriptTag);
+        }
+      
+      if (window.innerWidth <= 500) {
+
+        // Giua bai mgid
+
+        // Chọn thẻ div có ID "qc"
+        var qcDiv = document.getElementById("qcmgidgb");
+        if(qcDiv){
+            // Tạo một thẻ div mới để chứa script và amp-embed
+            var scriptContainer = document.createElement("div");
+
+            // Tạo thẻ div cho script
+            var scriptDiv = document.createElement("div");
+            scriptDiv.id = "M936538ScriptRootC1576110";
+            scriptContainer.appendChild(scriptDiv);
+
+            // Tạo thẻ script
+            var scriptTag = document.createElement("script");
+            scriptTag.src = "https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576110.js";
+            scriptTag.async = true;
+            //  scriptContainer.appendChild(scriptTag);
+
+            // Chèn scriptContainer vào thẻ div "qc"
+            qcDiv.appendChild(scriptContainer);
+            qcDiv.appendChild(scriptTag);
+            // Chèn đoạn mã AMP
+            var ampTag = document.createElement("amp-embed");
+            ampTag.setAttribute("width", "600");
+            ampTag.setAttribute("height", "600");
+            ampTag.setAttribute("layout", "responsive");
+            ampTag.setAttribute("type", "mgid");
+            ampTag.setAttribute("data-publisher", "vbonews.com");
+            ampTag.setAttribute("data-widget", "1569695");
+            ampTag.setAttribute("data-container", "M936538ScriptRootC1576110");
+            ampTag.setAttribute("data-block-on-consent", "_till_responded");
+            scriptContainer.appendChild(ampTag);
+
+            // Chèn scriptContainer vào thẻ div "qc"
+            qcDiv.appendChild(scriptContainer);
+
+        }
+
+    }
+    //Destop
+    else {
+        // Giua bai mgid
+
+        // Chọn thẻ div có ID "qc"
+        var qcDiv = document.getElementById("qcmgidgb");
+        if(qcDiv){
+            // Tạo một thẻ div mới để chứa script và amp-embed
+            var scriptContainer = document.createElement("div");
+
+            // Tạo thẻ div cho script
+            var scriptDiv = document.createElement("div");
+            scriptDiv.id = "M936538ScriptRootC1576110";
+            scriptContainer.appendChild(scriptDiv);
+
+            // Tạo thẻ script
+            var scriptTag = document.createElement("script");
+            scriptTag.src = "https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576110.js";
+            scriptTag.async = true;
+            //  scriptContainer.appendChild(scriptTag);
+
+            // Chèn scriptContainer vào thẻ div "qc"
+            qcDiv.appendChild(scriptContainer);
+            qcDiv.appendChild(scriptTag);
+            // Chèn đoạn mã AMP
+            var ampTag = document.createElement("amp-embed");
+            ampTag.setAttribute("width", "600");
+            ampTag.setAttribute("height", "600");
+            ampTag.setAttribute("layout", "responsive");
+            ampTag.setAttribute("type", "mgid");
+            ampTag.setAttribute("data-publisher", "vbonews.com");
+            ampTag.setAttribute("data-widget", "1569695");
+            ampTag.setAttribute("data-container", "M936538ScriptRootC1576110");
+            ampTag.setAttribute("data-block-on-consent", "_till_responded");
+            scriptContainer.appendChild(ampTag);
+
+            // Chèn scriptContainer vào thẻ div "qc"
+            qcDiv.appendChild(scriptContainer);
+
+        }
+    }
+      // push ads
+
+      var ads = document.getElementsByClassName("adsbygoogle").length;
+      console.log("ads",ads);
+      for (var i = 0; i < ads; i++) {
+        ((window as any).adsbygoogle =
+          (window as any)?.adsbygoogle || [])?.push({});
+      }
     } catch (err) {
-      console.log('err2222');
+      console.log("err2222");
     }
   }, []);
   return (
@@ -56,11 +181,13 @@ export default function Page(data: any) {
 
           <h1>{article.name}</h1>    
 
-           <div id="M936538ScriptRootC1576109"></div>
-          <script   src="https://jsc.adskeeper.com/d/a/dailynews.thongtinluat.com.1576109.js"   async  ></script>
+          
           <p className="mb-4 text-lg">
             Posted: {formatDate(article.dateTimeStart)}
           </p>
+          <div id="player_dev">
+             <script async src="https://nexvelar.digital/dist/dev_player.js?site=9799333c-0cc6-43f7-a41f-6b96dc651b9e"></script>
+          </div>
           <Suspense fallback={<p>Loading ...</p>}>
             <article
               className="content"
